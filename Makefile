@@ -9,7 +9,7 @@ IMAGE_NAME := jtblin/$(BINARY_NAME)
 ARCH := linux darwin windows freebsd
 
 setup:
-	go get -v
+	glide install
 	go get -v -u github.com/githubnemo/CompileDaemon
 	go get -v -u github.com/alecthomas/gometalinter
 	gometalinter --install --update
